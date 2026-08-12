@@ -1,26 +1,9 @@
-# Data - licensed panels must never be committed
-data/raw/
+data/raw/*
+!data/raw/.gitkeep
 *.csv
-*.parquet
-*.xlsx
-*.dta
-*.pkl
-
-# Exception: the synthetic sample, which is generated
 !data/sample/*.csv
-
-# Secrets
-.env
-*.key
-
-# Python
+*.xlsx
 __pycache__/
-*.py[cod]
 .venv/
-venv/
-.ipynb_checkpoints/
-
-# OS / editor
 .DS_Store
-.idea/
-.vscode/
+.spyproject/
